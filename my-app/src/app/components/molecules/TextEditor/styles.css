@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Variantes de borda e cores baseadas no estado */
+.ql-toolbar.ql-snow {
+  @apply border rounded-t-sm;
+}
+
+.ql-container.ql-snow {
+  @apply border rounded-b-sm;
+}
+
+.ql-editor {
+  @apply min-h-[150px];
+}
+
+/* Variantes para erro, alerta, sucesso e informação */
+.variant-error .ql-toolbar.ql-snow,
+.variant-error .ql-container.ql-snow {
+  @apply border-notify-warning-normal text-notify-warning-darkest;
+}
+
+.variant-alert .ql-toolbar.ql-snow,
+.variant-alert .ql-container.ql-snow {
+  @apply border-notify-alert-normal text-notify-alert-darkest;
+}
+
+.variant-success .ql-toolbar.ql-snow,
+.variant-success .ql-container.ql-snow {
+  @apply border-notify-success-normal text-notify-success-darkest;
+}
+
+.variant-info .ql-toolbar.ql-snow,
+.variant-info .ql-container.ql-snow {
+  @apply border-notify-info-normal text-notify-info-darkest;
+}

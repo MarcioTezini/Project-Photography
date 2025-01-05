@@ -1,0 +1,14 @@
+.scrollbar-custom {
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+  overflow: auto;
+  height: 70vh;
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+  width: 0px; 
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: transparent; 
+}
