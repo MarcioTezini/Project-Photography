@@ -17,11 +17,11 @@ export default function Home() {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
-        return response.json(); // Processa a resposta como JSON
+        return response.json();
       })
       .then((data) => {
         setData(data)
-        console.log(data); // Exibe os dados da API
+        console.log(data);
       })
       .catch((error) => {
         console.error('Erro ao buscar dados:', error);
